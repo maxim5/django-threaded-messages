@@ -11,9 +11,9 @@ from django.template import Context, loader
 from django.template.loader import render_to_string, get_template
 from django.template import Context
 import HTMLParser
-from lxml.html.clean import Cleaner
 import datetime
 
+notification = None
 if "notification" in settings.INSTALLED_APPS:
     from notification import models as notification
     
